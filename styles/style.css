@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root{
+    --primary-color: #000000;
+    --secondary-color: #f6f6f6;
+    --tertiary-color: #22D4FD;
+    --hover-color: #272727;
+
+    --main-font:'Krona One', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+  
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+body{
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    box-sizing: border-box;
+   
+    
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+    display: flex;
+    gap:50px;
+}
+
+
+
+
+.cabecalho__menu__link{
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8% 15%;
+    gap: 82px;
+    margin-bottom:300px;
+   
+}
+
+.apresentacao__content{
+    width: 50%;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.apresentacao__content__title{
+    font-size: 2.25rem;
+    font-family: var(--main-font);
+    
+}
+
+.apresentacao__content__paragraph{
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+}
+
+.titulo-destaque{
+    color: var(--tertiary-color);
+    font-size: 1.5rem;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao{
+    
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--tertiary-color);
+    color: var(--secondary-color);
+    width: 50%;
+    text-align: center; /*alinhamento do texto*/
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 16px;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 600; /*é pra colocar se é regular, bold, semibold etc*/
+}
+
+.apresentacao__links__link:hover{
+    background-color: var(--hover-color);
+    color:var(--tertiary-color);
+    padding: 3%;
+}
+
+.apresentacao__image{
+    width: 50%;
+}
+
+.rodape{
+    color: var(--primary-color);
+    padding: 24px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: var(--tertiary-color);
+   
+    
+}
+
+@media (max-width: 1200px){
+
+    .cabecalho{
+        padding: 8%;
+        justify-content:center;
+    }
+
+    
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+        margin-bottom:500px;
+    }
+
+    .apresentacao__content{
+        width: auto;
+    }
+
+
+}
